@@ -5,7 +5,7 @@ class SongDto {
   static const String durationKey = 'duration'; // in ms
   static const String artistIdKey = 'artistId';
   static const String imageUrlKey = 'imageUrl';
-  static const String likeKey = 'likes';
+  static const String likeKey = 'like';
 
   static Song fromJson(String id, Map<String, dynamic> json) {
     assert(json[titleKey] is String);

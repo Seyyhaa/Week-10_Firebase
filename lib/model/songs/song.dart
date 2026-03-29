@@ -14,8 +14,18 @@ class Song {
     required this.imageUrl, required this.likes,
   });
 
+
+  Song copyWith({int? likes}) => Song(
+    id: id,
+    title: title,
+    artistId: artistId,
+    duration: duration,
+    imageUrl: imageUrl,
+    likes: likes ?? this.likes,
+  );
+
   @override
   String toString() {
-    return 'Song(id: $id, title: $title, artist id: $artistId, duration: $duration)';
+    return 'Song(id: $id, title: $title, artist id: $artistId, duration: $duration,like: $likes)';
   }
 }
